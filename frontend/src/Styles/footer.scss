@@ -1,0 +1,31 @@
+.foot{
+    >.foot2{
+        height: 10vh;
+        background-color: rgb(242, 242, 222);
+        // background-image: linear-gradient(to bottom, white,rgb(242,242,222));
+        border-radius: 0.5rem 0.5rem 0 0;
+        position: sticky;
+        bottom: 0;
+        display: flex;
+        padding: 0 1rem;
+        align-items: center;
+        justify-content: space-between;
+        > div {
+            display: flex;
+            align-items: center;
+            > img {
+                border-radius: 50%;
+                width: 40px;
+                height: auto;
+                margin-right: 0.8rem;
+                cursor: pointer;
+            }
+        }
+
+        .footIcons{
+            font-size: 2rem;
+            gap: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}

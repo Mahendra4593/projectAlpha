@@ -1,0 +1,27 @@
+.foot > .foot2 {
+  height: 10vh;
+  background-color: rgb(242, 242, 222);
+  border-radius: 0.5rem 0.5rem 0 0;
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot > .foot2 > div {
+  display: flex;
+  align-items: center;
+}
+.foot > .foot2 > div > img {
+  border-radius: 50%;
+  width: 40px;
+  height: auto;
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+.foot > .foot2 .footIcons {
+  font-size: 2rem;
+  gap: 1rem;
+  padding-right: 1rem;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,23 +1,41 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import Header from './Header';
-import tourist from '../img/fort.jpg';
 import "../Styles/home.css";
-import {AiOutlineSearch} from "react-icons/ai";
+import Footer from './Footer';
+import SearchBar from './SearchBar';
+import {useParams} from "react-router-dom"
+import axios from "axios";
+import Placecards from './Placecards';
 
 const Home = () => {
+  const {id} = useParams();
+  const[keyword, setKeyword] = useState("");
   const formSubmission = (e) => {
     e.preventDefault();
   }
+
+  useEffect(() => {
+    axios.get(`/api/v1/destination/${id}`).then((res) => {
+      console.log(res);
+    }).catch((err) => {
+      
+    })
+  },[])
   return (
     <Fragment>
-      <Header/>
-      <section className='home1'>
-        <div className="search">
-          <form onSubmit={formSubmission}>
-            <input type="text" placeholder='🔍︎ Search'/>
-          </form>
-        </div>
-      </section>
+      <div className="homepage">
+        <Header/>
+          <section className='home1'>
+            <div className="search-bar-container">
+              <SearchBar keyword = {keyword} setKeyword = {setKeyword}/>
+              <div className="searchResults">SearchResults</div>
+            </div>
+          </section>
+          <section className="home2">
+            <Placecards/>
+          </section>
+        <Footer/>
+      </div>
     </Fragment>
   )
 }

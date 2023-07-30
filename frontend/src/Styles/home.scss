@@ -1,18 +1,35 @@
-.home1{
+.homepage{
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
+}
+
+
+.home1{
+    height: 40vh;
+    width: 80vw;
+    margin-inline: auto;
     background-image: url(../img/fort.jpg);
     display: flex;
     justify-content: center;
-    align-items: center;
+    background-size: cover;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 1.5px 1.5px 3px rgb(30, 30, 30);
+    border-radius: 10px;
 
-    > form{
-        border: none;
-        > input{
-            
-             &:focus{
-                outline: none;
-             }
-        }
+    > .search-bar-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 200px;
+        width: 60%;
+        margin-top: 130px;
     }
-
 }
+
+.home2 {
+    flex-grow: 1;
+}
+
+

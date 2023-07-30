@@ -1,0 +1,25 @@
+.card {
+  width: 200px;
+  height: 300px;
+  background-color: rgb(231, 245, 231);
+  border-radius: 10px;
+  box-shadow: 3px 2px 8px black;
+  cursor: pointer;
+}
+.card > #cardImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 3px 3px;
+}
+.card .cardInfo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 3rem;
+  gap: 1rem;
+  color: white;
+  font-family: "Roboto" sans-serif;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=placecards.css.map */
