@@ -40,7 +40,7 @@ exports.getDestinationDetails = async(req, res, next) => {
 }
 
 // Create New Review or Update the review
-exports.createdestinationReview = catchAsyncErrors(async (req, res, next) => {
+exports.createDestinationReview = catchAsyncErrors(async (req, res, next) => {
     const {rating, comment, destinationId} = req.body;
   
     const review = {
@@ -82,7 +82,7 @@ exports.createdestinationReview = catchAsyncErrors(async (req, res, next) => {
   });
   
   // Get All Reviews of a destination
-  exports.getdestinationReviews = catchAsyncErrors(async (req, res, next) => {
+  exports.getDestinationReviews = catchAsyncErrors(async (req, res, next) => {
     const destination = await Destinations.findById(req.query.id);
   
     if (!destination) {

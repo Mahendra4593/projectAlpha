@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const cookieParser = require('cookie-parser')
 const path = require('path')
-const fileUpload = require("express-fileupload");
+const bodyParser = require("body-parser");
+//const fileUpload = require("express-fileupload");
 
 // Configure
 /*if (process.env.NODE_ENV !== "PRODUCTION"){
@@ -14,11 +15,11 @@ const errorMiddleware = require('./middleware/error')
 app.use(express.json())
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({extended: true}))
-app.use(fileUpload());
+// app.use(fileUpload());
 
-// Route imports
-const destination = require('./routes/productRoute')
-const user = require('./routes/userRoute')
+// Route imports  
+const destination = require('./routes/DestinationRoutes')
+const user = require('./routes/userRoutes')
 
 app.use('/api/v1', destination)
 app.use('/api/v1', user)

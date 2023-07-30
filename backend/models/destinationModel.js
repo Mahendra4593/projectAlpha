@@ -14,7 +14,7 @@ const destinations = new Schema({
         type: String,
         required: true
     },
-    landmarks:[
+    /*landmarks:[
         {
             type: String,
             required: true
@@ -27,12 +27,16 @@ const destinations = new Schema({
                 required: true
             }
         }
-    ],
+    ],*/
     avgExpenses:{
         type: Number,
         required: true
     },
     weather:{
+        type: String,
+        required: true
+    },
+    img:{
         type: String,
         required: true
     }
