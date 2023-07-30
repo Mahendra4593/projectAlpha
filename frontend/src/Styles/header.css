@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Josefin+Sans&family=Lugrasimo&family=Roboto&family=Roboto+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 1.2rem 1.2rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px black;
+}
+header h1 {
+  font-family: "Roboto Mono" sans-serif;
+  word-spacing: 5px;
+  font-weight: 200;
+  letter-spacing: 3px;
+}
+header > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 17%;
+  font-family: "Roboto Mono" sans-serif;
+  text-transform: uppercase;
+}
+header > nav > a {
+  color: white;
+  text-decoration: none;
+}
+header > nav > a:hover {
+  color: rgba(0, 0, 0, 0.75);
+}/*# sourceMappingURL=header.css.map */

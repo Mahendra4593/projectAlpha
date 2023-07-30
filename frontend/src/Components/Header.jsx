@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "../Styles/header.css";
 
 const Header = () => {
   return (
-    <Header>
+    <header>
         <h1>Trip Planner Pro</h1>
         <nav>
-            <Link to={"/"}>Home</Link>
-            <Link to={"/login"}>Log in</Link>
-            <Link to={"/signup"}>Sign up</Link>
+            <Link to={"./"}>Home</Link>
+            <Link to={"./Login"}>Log in</Link>
+            <Link to={"./Signup"}>Sign up</Link>
         </nav>
-    </Header>
-  );
+    </header>
+  )
 }
 
-export default Header;
+export default Header

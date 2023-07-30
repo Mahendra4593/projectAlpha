@@ -1,0 +1,13 @@
+.home1 {
+  min-height: 100vh;
+  background-image: url(../img/fort.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home1 > form {
+  border: none;
+}
+.home1 > form > input:focus {
+  outline: none;
+}/*# sourceMappingURL=home.css.map */
